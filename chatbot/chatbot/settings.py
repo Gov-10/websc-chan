@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
     'mychatapp',
 ]
 
@@ -67,7 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'chatbot.wsgi.application'
+# WSGI_APPLICATION = 'chatbot.wsgi.application'
+ASGI_APPLICATION = 'chatbot.asgi.application'
 
 
 # Database
